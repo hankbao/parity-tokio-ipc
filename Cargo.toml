@@ -15,11 +15,11 @@ Interprocess communication library for tokio.
 bytes = "0.4"
 futures = "0.1"
 log = "0.4"
-mio-named-pipes = "0.1"
+mio-named-pipes = { git = "https://github.com/hankbao/mio-named-pipes.git", branch = "custom" }
 miow = "0.3.3"
 rand = "0.7"
-tokio = "0.1"
-tokio-named-pipes = "0.1"
+tokio = { git = "https://github.com/hankbao/tokio.git", branch = "v0.1.x-windows" }
+tokio-named-pipes = { git = "https://github.com/hankbao/tokio-named-pipes.git", branch = "custom" }
 tokio-uds = "0.2"
 
 [target.'cfg(windows)'.dependencies]
